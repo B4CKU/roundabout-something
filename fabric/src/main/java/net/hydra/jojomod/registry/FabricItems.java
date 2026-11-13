@@ -225,6 +225,11 @@ public class FabricItems {
     public static Item MAX_STAND_DISC_GOLD_EXPERIENCE = registerItem("max_gold_experience_disc",
             new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersGoldExperience(null)));
 
+    public static Item STAND_DISC_CRAZY_DIAMOND = registerItem("crazy_diamond_disc",
+            new StandDiscItem(new Item.Properties().stacksTo(1), new PowersCrazyDiamond(null)));
+    public static Item MAX_STAND_DISC_CRAZY_DIAMOND = registerItem("max_crazy_diamond_disc",
+            new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersCrazyDiamond(null)));
+
  /*   public static Item STAND_DISC_CREAM = registerItem("cream_disc",
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersCream(null)));
     public static Item MAX_STAND_DISC_CREAM = registerItem("max_cream_disc",
@@ -867,6 +872,8 @@ public class FabricItems {
                         entries.accept(MAX_STAND_DISC_D4C);
                         entries.accept(STAND_DISC_GOLD_EXPERIENCE);
                         entries.accept(MAX_STAND_DISC_GOLD_EXPERIENCE);
+                        entries.accept(STAND_DISC_CRAZY_DIAMOND);
+                        entries.accept(MAX_STAND_DISC_CRAZY_DIAMOND);
                         entries.accept(STAND_DISC_20_CENTURY_BOY);
                         entries.accept(STAND_DISC_TUSK);
                         entries.accept(MAX_STAND_DISC_TUSK);
@@ -1046,6 +1053,9 @@ public class FabricItems {
         ModItems.STAND_DISC_GOLD_EXPERIENCE = STAND_DISC_GOLD_EXPERIENCE;
         ((MaxStandDiscItem)MAX_STAND_DISC_GOLD_EXPERIENCE).baseDisc = ((StandDiscItem)STAND_DISC_GOLD_EXPERIENCE);
         ModItems.MAX_STAND_DISC_GOLD_EXPERIENCE = MAX_STAND_DISC_GOLD_EXPERIENCE;
+        ModItems.STAND_DISC_CRAZY_DIAMOND = STAND_DISC_CRAZY_DIAMOND;
+        ((MaxStandDiscItem)MAX_STAND_DISC_CRAZY_DIAMOND).baseDisc = ((StandDiscItem)STAND_DISC_CRAZY_DIAMOND);
+        ModItems.MAX_STAND_DISC_CRAZY_DIAMOND = MAX_STAND_DISC_CRAZY_DIAMOND;
        /* ModItems.STAND_DISC_CREAM = STAND_DISC_CREAM;
         ((MaxStandDiscItem)MAX_STAND_DISC_CREAM).baseDisc = ((StandDiscItem)STAND_DISC_CREAM);
         ModItems.MAX_STAND_DISC_CREAM = MAX_STAND_DISC_CREAM;*/

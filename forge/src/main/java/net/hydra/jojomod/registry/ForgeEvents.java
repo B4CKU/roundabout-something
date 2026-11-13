@@ -553,6 +553,10 @@ public class ForgeEvents {
         ((MaxStandDiscItem)ForgeItems.MAX_STAND_DISC_GOLD_EXPERIENCE.get()).baseDisc = ((StandDiscItem)ForgeItems.STAND_DISC_GOLD_EXPERIENCE.get());
         ModItems.MAX_STAND_DISC_GOLD_EXPERIENCE = ForgeItems.MAX_STAND_DISC_GOLD_EXPERIENCE.get();
 
+        ModItems.STAND_DISC_CRAZY_DIAMOND = ForgeItems.STAND_DISC_CRAZY_DIAMOND.get();
+        ((MaxStandDiscItem)ForgeItems.MAX_STAND_DISC_CRAZY_DIAMOND.get()).baseDisc = ((StandDiscItem)ForgeItems.STAND_DISC_CRAZY_DIAMOND.get());
+        ModItems.MAX_STAND_DISC_CRAZY_DIAMOND = ForgeItems.MAX_STAND_DISC_CRAZY_DIAMOND.get();
+
         /*ModItems.STAND_DISC_CREAM = ForgeItems.STAND_DISC_CREAM.get();
         ((MaxStandDiscItem)ForgeItems.MAX_STAND_DISC_CREAM.get()).baseDisc = ((StandDiscItem)ForgeItems.STAND_DISC_CREAM.get());
         ModItems.MAX_STAND_DISC_CREAM = ForgeItems.MAX_STAND_DISC_CREAM.get(); */
