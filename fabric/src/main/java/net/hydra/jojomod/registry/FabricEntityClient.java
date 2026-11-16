@@ -136,6 +136,7 @@ public class FabricEntityClient {
         EntityRendererRegistry.register(FabricEntities.GE_BUTTERFLY, GEButterflyRenderer::new);
         EntityRendererRegistry.register(FabricEntities.DIVER_DROWNED, DiverDrownedRenderer::new);
         EntityRendererRegistry.register(FabricEntities.DIVER_KICK, DiverKickEntityRenderer::new);
+        EntityRendererRegistry.register(FabricEntities.CRAZY_DIAMOND, CrazyDiamondRenderer::new);
         EntityRendererRegistry.register(FabricEntities.SILVER_CHARIOT, SilverChariotRenderer::new);
         EntityRendererRegistry.register(FabricEntities.SILVER_CHARIOT_PHARAOH, SilverChariotPharaohRenderer::new);
         EntityRendererRegistry.register(FabricEntities.SILVER_CHARIOT_RAPIER, SilverChariotRapierRenderer::new);

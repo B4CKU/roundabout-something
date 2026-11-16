@@ -933,6 +933,13 @@ public class FabricEntities {
                     .clientTrackingRange(5)
                     .build(Roundabout.MOD_ID + ":ge_butterfly")
     );
+    public static final EntityType<CrazyDiamondEntity> CRAZY_DIAMOND =
+            Registry.register(
+                    BuiltInRegistries.ENTITY_TYPE,
+                    Roundabout.location("crazy_diamond"),
+                    EntityType.Builder.of(CrazyDiamondEntity::new, MobCategory.MISC).
+                            sized(0.75f, 2.05f).clientTrackingRange(14).build(Roundabout.MOD_ID+":crazy_diamond")
+            );
         public static final EntityType<SilverChariotEntity> SILVER_CHARIOT =
                 Registry.register(
                         BuiltInRegistries.ENTITY_TYPE,
@@ -1598,6 +1605,7 @@ public class FabricEntities {
         ModEntities.GE_SNAKE = GE_SNAKE;
         ModEntities.GE_PIRANHA = GE_PIRANHA;
         ModEntities.GE_BUTTERFLY = GE_BUTTERFLY;
+                ModEntities.CRAZY_DIAMOND = CRAZY_DIAMOND;
                 ModEntities.SILVER_CHARIOT = SILVER_CHARIOT;
                 ModEntities.SILVER_CHARIOT_PHARAOH =  SILVER_CHARIOT_PHARAOH;
                 ModEntities.THROWN_HARPOON = THROWN_HARPOON;
@@ -1853,6 +1861,7 @@ public class FabricEntities {
                 FabricDefaultAttributeRegistry.register(DIVER_DROWNED, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(GOLD_EXPERIENCE, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(GOLD_EXPERIENCE_BETA, StandEntity.createStandAttributes());
+                FabricDefaultAttributeRegistry.register(CRAZY_DIAMOND, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(SILVER_CHARIOT, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(SILVER_CHARIOT_PHARAOH, StandEntity.createStandAttributes());
 

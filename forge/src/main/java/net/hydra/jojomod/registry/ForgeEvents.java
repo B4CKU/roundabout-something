@@ -1010,6 +1010,7 @@ public class ForgeEvents {
         ModEntities.GE_SNAKE = ForgeEntities.GE_SNAKE.get();
         ModEntities.GE_PIRANHA = ForgeEntities.GE_PIRANHA.get();
         ModEntities.GE_BUTTERFLY = ForgeEntities.GE_BUTTERFLY.get();
+        ModEntities.CRAZY_DIAMOND = ForgeEntities.CRAZY_DIAMOND.get();
         ModEntities.SILVER_CHARIOT = ForgeEntities.SILVER_CHARIOT.get();
         ModEntities.SILVER_CHARIOT_PHARAOH = ForgeEntities.SILVER_CHARIOT_PHARAOH.get();
         ModEntities.SILVER_CHARIOT_RAPIER = ForgeEntities.SILVER_CHARIOT_RAPIER.get();

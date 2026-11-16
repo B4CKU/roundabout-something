@@ -817,6 +817,14 @@ public class ForgeEntities {
                     .sized(0.5f, 0.5f)
                     .clientTrackingRange(5)
                     .build(Roundabout.MOD_ID + ":ge_butterfly"));
+
+    public static final RegistryObject<EntityType<CrazyDiamondEntity>> CRAZY_DIAMOND =
+            ENTITY_TYPES.register("crazy_diamond", () ->
+                    EntityType.Builder.of(CrazyDiamondEntity::new, MobCategory.MISC).sized(0.75f, 2.05f).
+                            clientTrackingRange(14).
+                            build(new ResourceLocation(Roundabout.MOD_ID, "crazy_diamond").toString())
+            );
+
     public static final RegistryObject<EntityType<SilverChariotEntity>> SILVER_CHARIOT =
             ENTITY_TYPES.register("silver_chariot", () ->
                     EntityType.Builder.of(SilverChariotEntity::new, MobCategory.MISC).sized(0.75f, 2.05f).
